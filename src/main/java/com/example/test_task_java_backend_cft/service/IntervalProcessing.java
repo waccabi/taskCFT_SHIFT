@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.Comparator;
 import java.util.List;
+import java.util.Stack;
 
 @Service
 @RequiredArgsConstructor
@@ -39,6 +40,10 @@ public class IntervalProcessing {
         //intervalService.update();
             List<IntervalBo> intervals = mergeIntervals.getIntervals();
             intervals.sort(Comparator.comparing(IntervalBo::getIntervalStart));
+
+
+
+
             intervalService.saveAll(intervals);
 
         return null;

@@ -9,7 +9,7 @@ import com.example.test_task_java_backend_cft.web.v1.dto.MergeIntervalsResponseD
 import org.mapstruct.Mapper;
 import org.springframework.beans.factory.annotation.Autowired;
 
-@Mapper(componentModel = "sprig")
+@Mapper(componentModel = "spring")
 public interface DtoMapper {
 
     MergeIntervalsBo toMergeIntervalsBo(MergeIntervalsRequestDto mergeIntervalsRequestDto, String kind);

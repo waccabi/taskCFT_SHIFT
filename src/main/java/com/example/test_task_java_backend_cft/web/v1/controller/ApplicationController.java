@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.*;
 public class ApplicationController {
 
     private final IntervalProcessing intervalProcessing;
-    private  DtoMapper mapper;
+    private final DtoMapper mapper;
 
     @PostMapping("/merge")
     @ResponseStatus(HttpStatus.OK)
